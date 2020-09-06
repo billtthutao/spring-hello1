@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
     @RequestMapping("/")
     public String hello(){
-        return "Hello World From Spring-Hello1";
+        String name = System.getProperty("MY_NAME");
+        return "Hello World From Spring-Hello1,MY_NAME="+name;
     }
 }
