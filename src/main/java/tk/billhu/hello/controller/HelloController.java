@@ -12,7 +12,7 @@ public class HelloController {
 
     @RequestMapping("/")
     public String hello(){
-        String name = env.getProperty("path");
+        String name = env.getProperty("MY_NAME");
         return "Hello World From Spring-Hello1,MY_NAME="+name;
     }
 }
